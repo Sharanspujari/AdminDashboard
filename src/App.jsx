@@ -2,7 +2,7 @@ import React from 'react'
 
 function App() {
   return (
-    <div>Welcome to Dashboard</div>
+    <div>Welcome to bikey Dashboard</div>
   )
 }
 
