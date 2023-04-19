@@ -1,9 +1,12 @@
 import React from 'react'
-
+import './App.css'
+import Header from './Components/Header/Header';
 function App() {
   return (
-    <div>Welcome to bikey Dashboard</div>
+    <>
+<Header/>
+    </>
   )
 }
 
-export default App
+export default App;
