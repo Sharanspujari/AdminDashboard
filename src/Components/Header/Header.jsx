@@ -1,8 +1,8 @@
 import React from 'react'
 import {GrNotification,GrLanguage,FiSettings} from 'react-icons/all'
 function Header() {
+
   return (
-   
     <div className='header-div'>
         <div className='container'>
             <div className='left'>
@@ -22,6 +22,7 @@ function Header() {
                 <FiSettings/>
                
                 </div>
+            <img src='profile_user.jpg' className='profile' />
             </div>
            
           
@@ -31,4 +32,4 @@ function Header() {
   )
 }
 
-export default Header
+export default Header;

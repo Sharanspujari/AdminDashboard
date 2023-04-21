@@ -21,23 +21,31 @@
 
 } */
 
+/*Head bar css started from here */
 .header-div {
   width: 100%;
-  height: 40px;
-  background-color: rgb(168, 215, 239);
+  height: 45px;
+  background-color: rgb(18, 200, 200);
+  
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 
 .container {
   height: 100%;
   padding: 0 25px;
-
+  
   display: flex;
+  overflow: hidden;
   align-items: center;
   justify-content: space-between;
+ 
+  /* box-shadow:0px 3px 2px gray; */
 }
 
 .logo {
-  color: deeppink;
+  color:rgb(7, 15, 245);
   font-size: 25px;
   font-weight: bolder;
   cursor: pointer;
@@ -74,3 +82,63 @@
   margin-right: 10px;
 
 }
+.profile{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*  side bar css start from here*/
+.sidebar-container{
+ 
+ display: flex;
+
+}
+.body{
+  flex: 5;
+  background-color:white;
+  
+}
+.side-bar{
+  flex: 1;
+  background-color: rgb(202, 202, 202);
+ height: fit-content;
+ position: sticky;
+ top: 45px;
+ /* overflow-y:scroll; */
+}
+.heading{
+ 
+  font-size: 18px;
+}
+.wrapper{
+  padding: 20px;
+  color: rgb(10, 9, 9);
+  
+}
+
+
+.sidebar-ul{
+list-style: none;
+/* margin-bottom: 10px; */
+padding: 5px;
+}
+.sidebar-list{
+ 
+   cursor: pointer;
+   display: flex;
+  /* padding: 5px; */
+  align-items: center;
+  border-radius: 10px;
+}
+.sidebar-list.active , .sidebar-list:hover{
+  background-color: rgb(137, 137, 137);
+  border-radius:10px;
+}
+.sideicon{
+  margin:8px;
+  font-size: 20px !important;
+}
+
+/* Home css START form here */
