@@ -10,16 +10,16 @@ function Header() {
             </div>
             <div className='right'>
                 <div className='icons'>
-                <GrNotification/>
+                <GrNotification className='icon'/>
                 <span className='total-notifications'>4</span>
                 </div>
                 <div className='icons'>
-                <GrLanguage/>
+                <GrLanguage className='icon'/>
                 <span className='total-notifications'>6</span>
                 </div>
                 
                 <div className='icons'>
-                <FiSettings/>
+                <FiSettings className='icon'/>
                
                 </div>
             <img src='profile_user.jpg' className='profile' />

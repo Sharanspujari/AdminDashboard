@@ -9,7 +9,7 @@ function App() {
 <Header/>
 <div className='sidebar-container'>
 <Sidebar/>
-<div className='body'><Home/></div>
+<Home/>
 
 </div>
     </div>

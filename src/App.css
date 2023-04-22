@@ -54,7 +54,7 @@
 .icons {
   position: relative;
   margin-right: 15px;
-
+ 
 }
 
 .total-notifications {
@@ -95,8 +95,8 @@
  display: flex;
 
 }
-.body{
-  flex: 5;
+.home-body{
+  flex: 4;
   background-color:white;
   
 }
@@ -142,3 +142,72 @@ padding: 5px;
 }
 
 /* Home css START form here */
+.featured-container{
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.contaner-items{
+  background-color: rgb(254, 253, 253);
+  /* flex: 1; */
+  margin:10px 20px;
+  width: 200px;
+
+  margin-top: 10px;
+  padding: 20px;
+  border-radius:10px ;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px 0px gray;
+
+}
+.money-container{
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  margin:10px 0px
+}
+.feature-title{
+  font-size:20px;
+  color: rgb(238, 17, 205);
+}
+.money{
+  font-size:26px;
+  font-weight: 600;
+}
+.money-rate{
+  display:flex;
+  align-items: center;
+  margin-left:16px;
+}
+.down-arrow{
+  font-size: 15px;
+  margin-left: 5px;
+  color: red;
+}
+.up-arrow{
+  font-size: 15px;
+  margin-left: 5px;
+  color: green;
+}
+.feature-subtitle{
+  font-size: 15px;
+  color: grey;
+}
+.chart-container{
+  background-color: rgb(254, 253, 253);
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 1px 1px 2px 1px gray;
+}
+.chart-heading{
+  margin-bottom: 20px;
+}
+.user-widges{
+  display: flex;
+  margin: 20px;
+  background-color: cadetblue;
+}
