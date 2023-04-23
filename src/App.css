@@ -206,8 +206,73 @@ padding: 5px;
 .chart-heading{
   margin-bottom: 20px;
 }
+
+/* User Widges css START FROM HERE */
 .user-widges{
   display: flex;
   margin: 20px;
-  background-color: cadetblue;
+  background-color:rgb(254, 253, 253);
 }
+.small-widges{
+  flex: 1;
+  box-shadow: 1px 1px 2px 1px gray;
+  padding: 20px;
+
+}
+.large-widges{
+  flex: 2;
+  box-shadow: 1px 1px 2px 1px rgb(168, 167, 167);
+  padding: 20px;
+  margin-left: 20px;
+}
+.member-heading{
+  font-size:25px;
+  font-weight: bold;
+  
+  }
+  .user-img{
+    width: 40px;
+    height: 40px;
+    border-radius:100%;
+  }
+  .newuser-ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .newuser-li{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 20px 0;
+  }
+  .details-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .user-name{
+    font-weight: 600;
+  }
+  .user-job{
+    color: rgb(108, 107, 107);
+  }
+  .display-btn{
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 7px  10px;
+    border-radius: 10px;
+    background-color: rgb(152, 152, 152);
+   color:white;
+    cursor: pointer;
+
+  }
+  .display-btn:hover{
+    background-color: rgb(7, 7, 7);
+  }
+  .display-icon{
+    font-size: 15px;
+   margin-right: 5px;
+   
+  }
