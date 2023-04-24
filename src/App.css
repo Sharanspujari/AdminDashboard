@@ -45,7 +45,7 @@
 }
 
 .logo {
-  color:rgb(7, 15, 245);
+  color:rgb(29, 26, 26);
   font-size: 25px;
   font-weight: bolder;
   cursor: pointer;
@@ -214,26 +214,21 @@ padding: 5px;
   background-color:rgb(254, 253, 253);
 }
 .small-widges{
-  flex: 1;
+  flex:1;
   box-shadow: 1px 1px 2px 1px gray;
   padding: 20px;
+}
 
-}
-.large-widges{
-  flex: 2;
-  box-shadow: 1px 1px 2px 1px rgb(168, 167, 167);
-  padding: 20px;
-  margin-left: 20px;
-}
 .member-heading{
-  font-size:25px;
-  font-weight: bold;
+  font-size:21px;
+  font-weight:600;
   
   }
   .user-img{
     width: 40px;
     height: 40px;
     border-radius:100%;
+    object-fit: cover;
   }
   .newuser-ul{
     margin:0;
@@ -275,4 +270,64 @@ padding: 5px;
     font-size: 15px;
    margin-right: 5px;
    
+  }
+
+  /* Large Transaction css start from here */
+  .heading-trans{
+    font-size: 22px;
+    font-weight:bold;
+    
+  }
+
+  .large-widges{
+    flex:2;
+    box-shadow: 1px 1px 2px 1px rgb(168, 167, 167);
+    padding: 20px;
+    margin-left: 15px;
+   
+  }
+  
+  .largewidge-table{
+    width: 100%;
+    border-spacing: 20px;
+  }
+  .largewidge-tableth{
+    text-align: left;
+  }
+  .ldwidges-user{
+    display: flex;
+    align-items: center;
+    font-weight:650;
+   
+    
+  }
+  .usertable-img{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    object-fit: cover;
+    }
+
+  .table-username{
+    margin-left: 10px;
+  }
+  .lguserdate,.lguseramount{
+ font-weight:300;
+  }
+  .lgwidgesbtn{
+    padding:5px 7px;
+    border-radius: 10px;
+    border: none;
+  }
+  .lgwidgesbtn.Approved{
+background-color: #e5faf2;
+color: #3bb077;
+  }
+  .lgwidgesbtn.Declined{
+    background-color: #fff0f1;
+    color: #d95087;
+  }
+  .lgwidgesbtn.Pending{
+    background-color: #ebf1fe;
+    color: #2a7ade;
   }
