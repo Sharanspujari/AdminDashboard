@@ -1,39 +1,87 @@
-import React from 'react'
-import {AiOutlineBorderVerticle,
-    MdOutlineTimeline,FiTrendingUp,SlUser
-    ,MdProductionQuantityLimits,BiRupee,GoGraph,
-    FiMail,VscFeedback,TiMessages,IoBagOutline} 
-    from 'react-icons/all'
- import { Link } from 'react-router-dom' 
-    
+import React from "react";
+import {
+  BiHome,
+  MdOutlineTimeline,
+  FiTrendingUp,
+  SlUser,
+  MdProductionQuantityLimits,
+  BiRupee,
+  GoGraph,
+  AiOutlineLogout,
+  FiMail,
+  VscFeedback,
+  TiMessages,
+  IoBagOutline,
+} from "react-icons/all";
+import { Link } from "react-router-dom";
+
 function Sidebar() {
   return (
-<>
-   <div className='side-bar'> 
+    <>
+      <div className="side-bar">
+        <div className="wrapper">
+          <div className="sidebar-menu">
+            <h3 className="heading">Admin-panel</h3>
+            <ul className="sidebar-ul">
+              <Link to="/" className="userlink">
+                {" "}
+                <li className="sidebar-list active">
+                  <BiHome className="sideicon" />
+                  Home
+                </li>
+              </Link>
+              <Link to="/analytics" className="userlink">
+                {" "}
+                <li className="sidebar-list">
+                  <MdOutlineTimeline className="sideicon" />
+                  Analytics
+                </li>
+              </Link>
+              <Link to="/sales" className="userlink">
+                <li className="sidebar-list">
+                  <FiTrendingUp className="sideicon" />
+                  Sales
+                </li>
+              </Link>
+            </ul>
+          </div>
 
-   <div className='wrapper'>
+          <div className="sidebar-menu">
+            <h3 className="heading">Quick-menu</h3>
+            <ul className="sidebar-ul">
+              <Link to="/user" className="userlink">
+                {" "}
+                <li className="sidebar-list">
+                  <SlUser className="sideicon" />
+                  Users
+                </li>
+              </Link>
 
-    <div className='sidebar-menu'>
-    <h3 className='heading'>Admin-panel</h3>
-    <ul className='sidebar-ul'>
-    <Link to="/" className='sidebarlink'> <li className='sidebar-list active'><AiOutlineBorderVerticle className='sideicon'/>Home</li></Link>
-        <li className='sidebar-list'><MdOutlineTimeline className='sideicon'  />Analytics</li>
-        <li className='sidebar-list'><FiTrendingUp className='sideicon'/>Sales</li>
-       
-    </ul>
-    </div>
+             <Link  to="/products" className="userlink"> <li className="sidebar-list">
+                <MdProductionQuantityLimits className="sideicon" />
+                Products
+              </li> </Link>
 
-    <div className='sidebar-menu'>
-    <h3 className='heading'>Quick-menu</h3>
-    <ul className='sidebar-ul'>
-    <Link to="/user"> <li className='sidebar-list'><SlUser className='sideicon'/>Users</li></Link>
-        <li className='sidebar-list'><MdProductionQuantityLimits className='sideicon'  />Products</li>
-        <li className='sidebar-list'><BiRupee className='sideicon'/>Transactions</li>
-        <li className='sidebar-list'><GoGraph className='sideicon'/>Reports</li>
-    </ul>
-    </div>
-   
-    <div className='sidebar-menu'>
+             <Link to="/transaction" className="userlink" > <li className="sidebar-list">
+                <BiRupee className="sideicon" />
+                Transactions
+              </li> </Link>
+
+            <Link to="/reports" className="userlink"><li className="sidebar-list">
+                <GoGraph className="sideicon" />
+                Reports
+              </li>
+              </Link>
+
+              <li className="sidebar-list">
+                <AiOutlineLogout className="sideicon logout" />
+                Logout
+              </li>
+
+            </ul>
+          </div>
+
+          {/* <div className='sidebar-menu'>
     <h3 className='heading'>Notifications</h3>
     <ul className='sidebar-ul'>
         <li className='sidebar-list'><FiMail className='sideicon'/>Mail</li>
@@ -41,9 +89,9 @@ function Sidebar() {
         <li className='sidebar-list'><TiMessages className='sideicon'/>Messages</li>
        
     </ul>
-    </div>
+    </div> */}
 
-    <div className='sidebar-menu'>
+          {/* <div className='sidebar-menu'>
     <h3 className='heading'>Staff</h3>
     <ul className='sidebar-ul'>
         <li className='sidebar-list'><IoBagOutline className='sideicon'/>Manage</li>
@@ -51,15 +99,11 @@ function Sidebar() {
         <li className='sidebar-list'><GoGraph className='sideicon'/>Reports</li>
        
     </ul>
-    </div>
-    
-
-   </div>
-   
-   </div>
-   </>
-
-  )
+    </div> */}
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default Sidebar
+export default Sidebar;

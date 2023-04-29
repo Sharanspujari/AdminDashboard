@@ -103,7 +103,7 @@
 .side-bar{
   flex: 1;
   background-color: rgb(202, 202, 202);
- height: fit-content;
+ height:100vh;
  position: sticky;
  top: 45px;
  /* overflow-y:scroll; */
@@ -137,15 +137,17 @@ padding: 5px;
 list-style: none;
 background-color: #3bb077;
 }
-.sidebar-list.active , .sidebar-list:hover{
-  background-color: rgb(137, 137, 137);
+ .sidebar-list:hover{
+  background-color: rgb(72, 165, 177);
   border-radius:10px;
 }
 .sideicon{
   margin:8px;
   font-size: 20px !important;
 }
-
+.sideicon.logout{
+ rotate:calc(-90%);
+}
 /* Home css START form here */
 .featured-container{
   width: 100%;
@@ -340,6 +342,7 @@ color: #3bb077;
   /* User List CSS start from here */
   .userList{
     flex: 4;
+   
   }
   .userlistcontainer{
     display: flex;
@@ -356,8 +359,175 @@ color: #3bb077;
 
   color: #0d5aff;
   margin-right: 20px;
+  cursor: pointer;
 }
 .deleteusericon{
   color: rgb(248, 76, 76);
+  cursor: pointer;
  
+}
+.usersearchbar{
+  display: flex;
+  align-items:center;
+margin-bottom: 10px;
+border-radius:5px;
+margin-left: 10px;
+border-style: none;
+background-color: rgb(218, 218, 218);
+padding:5px;
+font-size: 15px;
+}
+.analytics,.sales,.products,.transaction ,.report{
+  flex:4;
+}
+.userslist{
+  display: flex;
+  align-items: center; 
+  margin-left: 15px;
+  font-weight: 600;
+  color: #d95087;
+}
+.userlink {
+text-decoration: none;
+color:black;
+}
+
+.updateusers{
+  flex:4;
+  padding:20px
+}
+.userTitle{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adduserbtn{
+   width:80px;
+   border-radius:5px;
+border: none;
+padding:5px;
+background-color: rgb(38, 34, 34);
+color: white;
+cursor: pointer;
+font-size: 15px;
+}
+.adduserbtn:hover{
+  background-color: #3bb077;
+}
+.usercontainerdetail{
+  display: flex;
+}
+.showuser{
+  flex: 1;
+  background-color: rgb(254, 253, 253);
+  padding: 20px;
+  box-shadow: 1px 2px 2px 2px rgb(167, 164, 164);
+}
+
+.showusertop{
+  display: flex;
+  align-items: center;
+}
+.showuserimg{
+  width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.showusertitle{
+  display: flex;
+  flex-direction: column;
+  margin-left:20px;
+  
+}
+.showusername{
+  font-weight: 600;
+
+}
+.showuserjob{
+  font-weight: 300;
+  color: rgb(140, 140, 140);
+}
+.usershowbottom{
+  margin-top: 20px;
+
+}
+.userShowTitle{
+  font-size: 15px;
+  color: rgb(167, 164, 164);
+ font-weight: 600;
+}
+.usershowinfo{
+  display: flex;
+  align-items: center;
+  margin:20px 0;
+  color:#444;
+}
+.userShowinfotitle{
+  margin-left: 10px;
+}
+.updateuser{
+  flex:2;
+  background-color: rgb(254, 253, 253);
+  padding: 20px;
+  box-shadow: 1px 2px 2px 2px rgb(167, 164, 164);
+  margin-left:20px;
+}
+.userupdateimg{
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+   object-fit: cover;
+   margin-right:20px;
+}
+.uploadicon{
+  cursor: pointer;
+}
+.userupdateform{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.editusertitle{
+  font-size:22px ;
+  font-weight: 600;
+}
+.userupdateitem{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.userupdateitem>label{
+  margin-bottom:5px;
+  font-size: 15px;
+}
+.usernameinput{
+  border: none;
+  width: 250px;
+  height: 30px;
+  border-bottom: 1px solid gray;
+}
+.rightuserupdate{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  margin-left:5px;
+}
+.userupdateupload{
+  display: flex;
+  align-items: center;
+}
+.userupdatebtn{
+  padding: 5px;
+  border: none;
+  border-radius:5px;
+  background-color: orangered;
+  color: rgb(250, 249, 249);
+  cursor: pointer;
+  width:122px;
+  font-weight: bold;
+}
+.userupdatebtn:hover{
+  background-color: rgb(240, 115, 69);
 }
