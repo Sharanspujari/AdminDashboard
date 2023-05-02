@@ -109,10 +109,11 @@ margin-top: 5px;
 
 }
 .home-body{
-
+  
+  width: fit-content;
   flex: 4;
   background-color:white;
-  
+  overflow-y: hidden;
 }
 .side-bar{
   flex: 1;
@@ -430,6 +431,7 @@ color:inherit;
 .updateusers{
   flex:4;
   padding:20px
+  
 }
 .userTitle{
   display: flex;
@@ -774,6 +776,32 @@ font-size: 15px;
     cursor: pointer;
     width: 110px;
   }
+  
   .productButton:hover{
     background-color: #dd1364;
+  }
+  @media screen and (max-width:650px) {
+    .featured-container{
+      display: flex;
+      flex-direction: column;
+    }
+    .chart-container{
+      display: flex;
+      width:400px;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      flex-direction: column;
+    }
+    .user-widges{
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+    .large-widges{
+     
+       margin: 0;
+       margin-top: 20px;
+    }
+      
   }
