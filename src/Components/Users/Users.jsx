@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {BsPerson,AiOutlineCalendar,FcPhoneAndroid
   ,AiOutlineMail,GoLocation,MdPublish} from 'react-icons/all'
 function Users() {
@@ -6,7 +7,7 @@ function Users() {
     <div className='updateusers'>
   <div className='userTitle'>
     <h1 className='userTitle'>Edit User</h1>
-    <button className='adduserbtn'>Create</button>
+   <Link to="/addnewuser"><button className='adduserbtn'>Create</button></Link> 
   </div>
 
   <div className='usercontainerdetail'>

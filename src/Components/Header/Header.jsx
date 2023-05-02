@@ -6,7 +6,7 @@ function Header() {
     <div className='header-div'>
         <div className='container'>
             <div className='left'>
-            <span className='logo'>Dashboard</span>
+            <span><img className='logo' src='business-report.png' alt=''/></span>
             </div>
             <div className='right'>
                 <div className='icons'>
@@ -19,7 +19,7 @@ function Header() {
                 </div>
                 
                 <div className='icons'>
-                <FiSettings className='icon'/>
+                <FiSettings className='settingicon'/>
                
                 </div>
             <img src='profile_user.jpg' className='profile' />

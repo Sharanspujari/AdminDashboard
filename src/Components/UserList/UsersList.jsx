@@ -1,17 +1,35 @@
 import React,{useState} from 'react'
-import {MdEdit,MdDelete} from 'react-icons/all'
+import {MdEdit,MdDelete,AiOutlineSearch} from 'react-icons/all'
 import { DataGrid } from '@mui/x-data-grid';
 import { userrowsdata } from '../../JsonData';
 import { Link } from 'react-router-dom';
 function UsersList() {
 
-  const [userData,setUserDate]=useState(userrowsdata)
+  const [userData,setUserData]=useState(userrowsdata)
+  
+  const [searchVal,setSearchVal]=useState("");
 
   function handleDelete(id){
-    setUserDate(userData.filter((data)=>
+    setUserData(userData.filter((data)=>
       data.id!=id
     ))
   }
+
+  function handleClickSearch()
+  {
+if(searchVal.length === 0){
+ 
+  setUserData(userrowsdata.username);
+
+}
+const filterBySeacrh=userrowsdata.filter((items)=>{
+  if(items.username.toLowerCase().includes(searchVal.toLowerCase())){
+    return items.username;
+  }
+})
+setUserData(filterBySeacrh)
+  }
+  
     const columns = [
         { field: 'id', headerName: 'ID', width: 90 },
         { field: 'user', headerName: 'User', width: 200 ,renderCell:(param)=>{
@@ -57,8 +75,11 @@ function UsersList() {
  
     <div className='userList'>
      <h3 className='userslist'>Users List</h3>
-     <input className='usersearchbar' placeholder='Search user....'/>
+     <div className='searchcontainer'> <input className='usersearchbar' onChange={(e)=>setSearchVal(e.target.value)} placeholder='Search user....'/>
+     <AiOutlineSearch className='searchicon'  onClick={handleClickSearch}/></div>
+    
      <DataGrid
+
         rows={userData}
         columns={columns}
         paginationModel={{ page: 0, pageSize:10 }}
