@@ -24,7 +24,9 @@ const [searchProductVal,setSearchProductVal]=useState("");
         return item.name;
       }
     })
+
     setProduct(filterByproduct)
+    
       }
       const columns = [
         { field: 'id', headerName: 'ID', width: 90 },

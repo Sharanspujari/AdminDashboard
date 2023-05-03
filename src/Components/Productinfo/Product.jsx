@@ -10,7 +10,7 @@ function Product() {
     <div className='productTitleContainer'>
     <h2 className='productTitle'>Product</h2>
    
-   <Link to="/newproduct">
+   <Link to="/addnewproduct">
     <button className='addproductbtn'>Add Product</button>
    </Link>
     </div>
@@ -29,6 +29,7 @@ function Product() {
 
             <div className='productInfoBottom'>
                
+
                 <div className='productInfoItem'>
                 <span className="productInfoKey">id:</span>
                 <span className="productInfoValue">123</span>
@@ -37,23 +38,25 @@ function Product() {
                 <div className='productInfoItem'>
                 <span className="productInfoKey">Sales:</span>
                 <span className="productInfoValue">6105</span>
+                 </div>
 
-                </div>
                 <div className='productInfoItem'>
                 <span className="productInfoKey">Active:</span>
                 <span className="productInfoValue">yes</span>
-
                 </div>
+                
                 <div className='productInfoItem'>
                 <span className="productInfoKey">In Stock:</span>
                 <span className="productInfoValue">no</span>
-
                 </div>
+               
             </div>
         </div>
     </div>
+
     <div className='productBottom'>
         <form className='productForm'>
+        
        <div className='prductformleft'>
         <label>Product Name</label>
         <input type="text" placeholder='Oneplus 9T'/>
@@ -68,17 +71,22 @@ function Product() {
             <option value="no">No</option>
         </select>
        </div>
+
        <div className='productformright'>
+
         <div className='productupload'>
-            <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9/Arcticsky_9.png" alt='' className='productuploadimg'/>
+      <img src="https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9/Arcticsky_9.png" alt='' className='productuploadimg'/>
       <label for="file">
       <MdPublish/>
       </label>
       <input type="file" id='file' style={{display:"none"}}/>
         </div>
+
         <button  className='productButton'>Update</button>
        </div>
+
         </form>
+
     </div>
 
     </div>

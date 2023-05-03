@@ -780,6 +780,95 @@ font-size: 15px;
   .productButton:hover{
     background-color: #dd1364;
   }
+
+.newProduct{
+  flex: 4;
+  margin-left: 20px;
+}
+.addProductForm {
+  margin-top: 10px;
+}
+
+.addProductItem {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.addProductItem > label {
+  color: gray;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.addProductItem > input {
+  padding: 10px;
+}
+
+.addProductItem > select {
+  padding: 10px;
+}
+
+.addProductButton {
+  margin-top: 10px;
+  padding: 7px 10px;
+  border: none;
+  width:100px;
+  border-radius: 10px;
+  background-color: rgb(241, 101, 7);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.addProductButton:hover{
+  background-color: orangered;
+}
+.fileinput{
+  margin-right: 20px;
+}
+.leftanalytics{
+display: flex;
+
+}
+.rightanalytics{
+  flex:2;
+ 
+}
+
+.lefta{
+  display: flex;
+  flex-direction: column;
+}
+.righta{
+  display: flex;
+  flex-direction: column;
+}
+.custemer{
+ border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  align-items: center;
+  justify-self: center;
+  font-size:15px;
+  color: gray;
+  width:150px;
+  box-shadow: 1px 2px 2px 2px rgb(167, 164, 164);
+}
+.custmerno{
+  margin-top: 20px;
+  font-size:40px;
+  color:#075fcc ;
+
+}
+.custemericon{
+  margin-top: 10px;
+  font-size:45px;
+  color: #75b0f8;
+}
+
+
   @media screen and (max-width:650px) {
     .featured-container{
       display: flex;
@@ -802,6 +891,12 @@ font-size: 15px;
      
        margin: 0;
        margin-top: 20px;
+    }
+    .updateusers{
+      display: flex;
+      width:fit-content;
+      overflow-y: hidden;
+     flex-direction: column;
     }
       
   }

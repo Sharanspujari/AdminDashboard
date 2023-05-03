@@ -10,19 +10,23 @@ import ProductsList from './Components/Products/ProductsList';
 import { Routes,Route,Outlet } from 'react-router-dom';
 import Transaction from './Components/Transactions/Transaction';
 import Report from './Components/Reports/Report';
-import Users from './Components/Users/Users'
 import NewUser from './Components/AddNewuser/NewUser';
+import Users from './Components/Users/Users'
+// import NewUser from './Components/AddNewuser/NewUser';
 import Product from './Components/Productinfo/Product';
+import AddNewproduct from './Components/NewProduct/AddNewproduct';
 function App() {
   return (
    <div>
 
 <Header/>
+
 <div className='sidebar-container'>
 <Sidebar/>
 <Routes>
 <Route path='/' element={<Home/>}/>
 <Route path="/user" element={<UsersList/>}/>
+<Route path="/addnewuser" element={<NewUser/>}/>
 <Route path="/analytics" element={<Analytics/>}/>
 <Route path="/sales" element={<Sales/>}/>
 
@@ -33,7 +37,7 @@ function App() {
 <Route path='/transaction' element={<Transaction/>}/>
 <Route path='/reports' element={<Report/>}/>
 <Route path='/users/:usersid' element={<Users/>}/>
-<Route path='/addnewuser' element={<NewUser/>}/>
+<Route path='/addnewproduct' element={<AddNewproduct/>}/>
 </Routes>
 <Outlet/>
 
