@@ -1,71 +1,74 @@
 import React from 'react'
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 function ChartAnalytic() {
+
   const data = [
     {
-      name: 'Page A',
-      uv: 4000,
-      pv: 2400,
+      day: 'Sun',
+      Revenue:200000,
+      Products:150,
       amt: 2400,
     },
     {
-      name: 'Page B',
-      uv: 3000,
-      pv: 1398,
+      day: 'Mon',
+      Revenue: 30000,
+      Products: 40,
       amt: 2210,
     },
     {
-      name: 'Page C',
-      uv: 2000,
-      pv: 9800,
+      day: 'Tue',
+      Revenue: 20000,
+      Products:25,
       amt: 2290,
     },
     {
-      name: 'Page D',
-      uv: 2780,
-      pv: 3908,
+      day: 'Wed',
+      Revenue:100000,
+      Products:101,
       amt: 2000,
     },
     {
-      name: 'Page E',
-      uv: 1890,
-      pv: 4800,
+      day: 'Thu',
+      Revenue:70000,
+      Products: 48,
       amt: 2181,
     },
     {
-      name: 'Page F',
-      uv: 2390,
-      pv: 3800,
+      day: 'Fri',
+      Revenue:63000,
+      Products: 38,
       amt: 2500,
     },
     {
-      name: 'Page G',
-      uv: 3490,
-      pv: 4300,
+      day: 'Sat',
+      Revenue:150000,
+      Products:125,
       amt: 2100,
     },
   ];
-  
-  
   return (
   
-
-    <ResponsiveContainer>
-    <BarChart
-    
-      data={data}
-     
-      barSize={20}
-    >
-      <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
-      <YAxis />
-      <Tooltip />
-      <Legend />
-      <CartesianGrid strokeDasharray="3 3" />
-      <Bar dataKey="pv" fill="#8884d8" background={{ fill: '#eee' }} />
-    </BarChart>
-  </ResponsiveContainer>
- 
+       <ResponsiveContainer >
+        <BarChart
+        
+          data={data}
+          margin={{
+            top: 20,
+            right: 30,
+            left: 20,
+            bottom: 5,
+          }}
+        >
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="day" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Bar dataKey="Products"  fill="#8884d8" />
+          <Bar dataKey="Revenue"  fill="#82ca9d" />
+        </BarChart>
+      </ResponsiveContainer>
+  
   )
 }
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './App.css'
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/Sidebar';
@@ -15,11 +15,34 @@ import Users from './Components/Users/Users'
 // import NewUser from './Components/AddNewuser/NewUser';
 import Product from './Components/Productinfo/Product';
 import AddNewproduct from './Components/NewProduct/AddNewproduct';
+// import Popup from './Components/Popup/Popup';
 function App() {
+  const [isopen, setIsopen] = useState(false);
   return (
    <div>
-
-<Header/>
+  {isopen && (
+              <div className="notificationdetail">
+                <ul className="ulnotification">
+                  <li className="linotification">
+                    <img
+                      className="notificationimg"
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4j5EsloB48DnxRWOYQKJxT01dGj6cVFEDPQ&usqp=CAU"
+                      alt=""
+                    />
+                    <div className="infonotification">
+                      <span className="usernotification">Praveen John</span>
+                      <span className="usermsg">
+                        Check out every table in detail
+                      </span>
+                      <span className="notificationtime">May 27,03:15pm</span>
+                    </div>
+                  </li>
+                
+                </ul>
+              </div>
+            )}
+    
+<Header onclick={()=>setIsopen(!isopen)}/>
 
 <div className='sidebar-container'>
 <Sidebar/>

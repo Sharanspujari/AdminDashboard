@@ -71,7 +71,8 @@ const [searchProductVal,setSearchProductVal]=useState("");
   return (
     <div className="products">
      <h3 className='userslist'>Products List</h3>
-     <div className='searchcontainer'> <input className='usersearchbar' onChange={(e)=>setSearchProductVal(e.target.value)} placeholder='Search product....'/>
+     <div className='searchcontainer'>
+      <input className='usersearchbar' onChange={(e)=>setSearchProductVal(e.target.value)} placeholder='Search product....'/>
      <AiOutlineSearch className='searchicon'  onClick={handleproductSearch}/>
     </div>
       <DataGrid

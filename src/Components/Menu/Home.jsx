@@ -5,6 +5,8 @@ import { UserAnalyticsData } from '../../JsonData'
 import SmallWidges from '../UserSmallWidges/SmallWidges'
 import LargeWidges from '../UserLargeWidges/LargeWidges'
 function Home() {
+
+
   return (
     <div className='home-body'>
         <Info/>
@@ -16,5 +18,6 @@ function Home() {
     </div>
   )
 }
+ 
 
 export default Home
